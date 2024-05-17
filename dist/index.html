@@ -22,7 +22,10 @@
     <link rel="stylesheet" href="style.css" />
     <title>Portfolio | Mesbah</title>
   </head>
-  <body class="bg-bg-body text-white text-default font-medium leading-[1.5]">
+  <!-- TODO: Remove padding from body -->
+  <body
+    class="bg-bg-body text-white text-default font-medium leading-[1.56] overflow-x-hidden pb-[100px]"
+  >
     <header
       class="mt-[24px] w-full absolute top-0 left-0 z-10 md:mt-[32px] lg:mt-[48px]"
     >
@@ -108,7 +111,9 @@
     </header>
     <main>
       <section class="relative">
-        <div class="wrapper md:flex lg-screen:relative">
+        <div
+          class="wrapper md:flex lg-screen:relative pb-[80px] md:pb-[100px] lg:pb-[140px]"
+        >
           <!-- TODO: If further calculation is possible using translate -->
           <img
             class="absolute top-[112px] right-[50%] -z-10 md:top-[84px] md:-translate-x-[25%] lg:top-[116px] lg:-translate-x-[36%] min-[1250px]:-translate-x-[50%] min-[1250px]:top-[120px]"
@@ -122,7 +127,6 @@
               alt=""
             />
             <picture class="">
-              <!--FIXME: srcset syntax -->
               <source
                 media="(min-width: 1024px)"
                 srcset="
@@ -159,9 +163,12 @@
               />
             </picture>
           </div>
-          <div class="mt-[40px] text-center md:text-left">
+          <div
+            class="mt-[40px] md:mt-[138px] lg:mt-[150px] text-center md:text-left"
+          >
+            <!-- md:mt-[102px] lg:mt-[128px] -->
             <h1
-              class="font-bold text-hero leading-[1.2] mb-[24px] md:mb-[60px] md:mt-[102px] lg:mt-[128px] lg:mb-[72px]"
+              class="font-bold text-hero leading-[1.2] mb-[24px] md:mb-[60px] lg:mb-[72px]"
             >
               Nice to<br />
               meet you! I&apos;m<br />
@@ -175,6 +182,42 @@
               about building accessible web apps that users love.
             </p>
             <a href="#" class="text-sub text-decor">my resume</a>
+          </div>
+        </div>
+      </section>
+      <section class="">
+        <div
+          class="wrapper relative border-t-[1px] border-b-[1px] custom-small:border-b-0 border-text-secondary py-[40px] grid gap-[24px] custom-small:grid-cols-2 custom-small:gap-y-[52px] custom-small:gap-x-[24px] md:py-[52px] lg:py-[72px] lg:grid-cols-3 lg:gap-x-[30px] lg:gap-y-[58px]"
+        >
+          <img
+            class="absolute bottom-0 right-0 -z-10 translate-y-1/2 translate-x-1/2 custom-small:-translate-y-[10%] custom-small:translate-x-[75%] md:translate-x-[65%] lg:translate-x-[70%]"
+            src="./assets/images/pattern-rings.svg"
+            alt=""
+          />
+          <h2 class="visually-hidden">Skills</h2>
+          <div class="skill-container">
+            <h3 class="skill-title">HTML</h3>
+            <p class="text-text-secondary">4 Years Experience</p>
+          </div>
+          <div class="skill-container">
+            <h3 class="skill-title">CSS</h3>
+            <p class="text-text-secondary">4 Years Experience</p>
+          </div>
+          <div class="skill-container">
+            <h3 class="skill-title">JavaScript</h3>
+            <p class="text-text-secondary">4 Years Experience</p>
+          </div>
+          <div class="skill-container">
+            <h3 class="skill-title">TypeScript</h3>
+            <p class="text-text-secondary">1.5 Years Experience</p>
+          </div>
+          <div class="skill-container" v>
+            <h3 class="skill-title">Accessibility</h3>
+            <p class="text-text-secondary">1 Years Experience</p>
+          </div>
+          <div class="skill-container">
+            <h3 class="skill-title">React</h3>
+            <p class="text-text-secondary">1.5 Years Experience</p>
           </div>
         </div>
       </section>

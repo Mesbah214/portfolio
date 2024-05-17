@@ -3,48 +3,59 @@
 @tailwind utilities;
 
 .text-logo {
-    font-size: 2.4rem;
-    font-size: clamp(2.4rem, 2.036363636363636rem + 0.9696969696969701vw, 3.2rem);
+  font-size: 2.4rem;
+  font-size: clamp(2.4rem, 2.04rem + 0.97vw, 3.2rem);
 }
 
 .text-hero {
-    font-size: 4rem;
-    font-size: clamp(4rem, 1.89rem + 5.89vw, 8.8rem);
+  font-size: 4rem;
+  font-size: clamp(4rem, 1.89rem + 5.89vw, 8.8rem);
 }
 
 .text-default {
-    font-size: 1.6rem;
-    font-size: clamp(1.6rem, 1.41rem + 0.59vw, 1.8rem);
+  font-size: 1.6rem;
+  font-size: clamp(1.6rem, 1.41rem + 0.59vw, 1.8rem);
+}
+
+.text-skill {
+  font-size: 3.2rem;
+  font-size: clamp(3.2rem, 2.28rem + 2.47vw, 4.8rem);
 }
 
 @layer utilities {
-    .wrapper {
-        @apply w-[90%] max-w-[1124px] mx-auto
-    }
+  .wrapper {
+    @apply w-[90%] md:w-[95%] max-w-[1124px] mx-auto;
+  }
 
-    .transition-on-hover {
-        @apply transition-colors ease-in duration-300 motion-reduce:transition-none motion-reduce:hover:transition-none
-    }
+  .transition-on-hover {
+    @apply transition-colors ease-in duration-300 motion-reduce:transition-none motion-reduce:hover:transition-none;
+  }
 
-    .svg-size {
-        @apply w-[19.2px] h-[19.2px]
-    }
+  .svg-size {
+    @apply w-[19.2px] h-[19.2px];
+  }
 
-    .svg-size-md {
-        @apply w-[25px] h-[24px]
-    }
+  .svg-size-md {
+    @apply w-[25px] h-[24px];
+  }
 
-    .visually-hidden {
-        @apply absolute left-[-10000px] top-auto w-[1px] h-[1px] hidden
-    }
+  .visually-hidden {
+    @apply absolute left-[-10000px] top-auto w-[1px] h-[1px] hidden;
+  }
 
-    .text-sub {
-        @apply text-[1.6rem] leading-[1.625] tracking-[2.29px] font-bold uppercase
-    }
+  .text-sub {
+    @apply text-[1.6rem] leading-[1.625] tracking-[2.29px] font-bold uppercase;
+  }
 
-    .text-decor {
-        @apply underline decoration-2 md:decoration-[2px] underline-offset-[10px] decoration-bg-contact
-    }
+  .text-decor {
+    @apply underline decoration-2 md:decoration-[2px] underline-offset-[10px] decoration-bg-contact;
+  }
+
+  .skill-container {
+    @apply text-center min-[600px]:text-left;
+  }
+
+  .skill-title {
+    @apply leading-[1.17] font-bold text-skill mb-[2px];
+  }
 }
-
-

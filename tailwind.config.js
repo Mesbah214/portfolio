@@ -6,6 +6,7 @@ module.exports = {
         extend: {
             screens: {
                 'lg-screen': '1124px',
+                'custom-small': '600px'
             },
             backgroundImage: {
                 'hero-pattern': "url(./assets/images/pattern-rings.svg)"
