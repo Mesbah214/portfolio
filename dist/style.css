@@ -651,6 +651,10 @@ video {
   margin-top: 24px;
 }
 
+.mt-\[32px\] {
+  margin-top: 32px;
+}
+
 .mt-\[40px\] {
   margin-top: 40px;
 }
@@ -729,8 +733,8 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-\[repeat\(2\2c _41\.28rem\)\] {
-  grid-template-columns: repeat(2, 41.28rem);
+.grid-rows-\[auto_356px\] {
+  grid-template-rows: auto 356px;
 }
 
 .flex-col {
@@ -806,9 +810,14 @@ video {
   border-top-width: 1px;
 }
 
-.border-text-secondary {
+.border-secondary {
   --tw-border-opacity: 1;
   border-color: hsl(0 0% 85% / var(--tw-border-opacity));
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-accent {
@@ -816,22 +825,26 @@ video {
   background-color: hsl(0 0% 14% / var(--tw-bg-opacity));
 }
 
-.bg-bg-body {
+.bg-body {
   --tw-bg-opacity: 1;
   background-color: hsl(0 0% 8% / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
-.from-bg-contact {
+.from-contact {
   --tw-gradient-from: hsl(153, 71%, 59%) var(--tw-gradient-from-position);
   --tw-gradient-to: hsl(153 71% 59% / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.to-bg-contact {
+.to-contact {
   --tw-gradient-to: hsl(153, 71%, 59%) var(--tw-gradient-to-position);
 }
 
@@ -847,9 +860,19 @@ video {
   background-repeat: repeat-x;
 }
 
+.px-\[24px\] {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 .py-\[140px\] {
   padding-top: 140px;
   padding-bottom: 140px;
+}
+
+.py-\[16px\] {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .py-\[40px\] {
@@ -890,11 +913,15 @@ video {
   line-height: 1.56;
 }
 
+.leading-\[1\.625\] {
+  line-height: 1.625;
+}
+
 .leading-none {
   line-height: 1;
 }
 
-.text-text-secondary {
+.text-secondary {
   --tw-text-opacity: 1;
   color: hsl(0 0% 85% / var(--tw-text-opacity));
 }
@@ -904,11 +931,16 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-primary {
+  --tw-text-opacity: 1;
+  color: hsl(0 100% 100% / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
 
-.decoration-bg-contact {
+.decoration-contact {
   text-decoration-color: hsl(153, 71%, 59%);
 }
 
@@ -920,10 +952,6 @@ video {
   text-underline-offset: 10px;
 }
 
-.opacity-50 {
-  opacity: 0.5;
-}
-
 .outline-4 {
   outline-width: 4px;
 }
@@ -932,7 +960,7 @@ video {
   outline-offset: 4px;
 }
 
-.outline-bg-contact {
+.outline-contact {
   outline-color: hsl(153, 71%, 59%);
 }
 
@@ -966,7 +994,7 @@ video {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-  transition-duration: .2s;
+  transition-duration: .3s;
   transition-timing-function: linear;
 }
 
@@ -1085,25 +1113,6 @@ video {
   font-size: clamp(3.2rem, 2.28rem + 2.47vw, 4.8rem);
 }
 
-/* TODO: Convert to tailwind */
-
-.form_control {
-  position: relative;
-  margin-bottom: 16px;
-}
-
-.form_control input,
-.form_control textarea {
-  width: 100%;
-  background-color: transparent;
-  padding-block: 16px;
-  padding-inline: 24px;
-  border: none;
-  border-bottom: 1px solid hsl(0, 0%, 100%);
-  line-height: 1.625;
-  color: hsl(0, 0%, 85%);
-}
-
 .form_control input:focus-visible:invalid ~ .form_icon,
 .form_control textarea:focus-visible:invalid ~ .form_icon {
   display: inline-block;
@@ -1121,9 +1130,13 @@ video {
   fill: currentColor;
 }
 
-.hover\:text-bg-contact:hover {
+.hover\:text-contact:hover {
   --tw-text-opacity: 1;
   color: hsl(153 71% 59% / var(--tw-text-opacity));
+}
+
+.focus\:invalid\:outline-invalid:invalid:focus {
+  outline-color: #ff6f58;
 }
 
 .focus-visible\:outline:focus-visible {
@@ -1358,6 +1371,14 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-\[repeat\(2\2c _41\.28rem\)\] {
+    grid-template-columns: repeat(2, 41.28rem);
+  }
+
+  .lg\:grid-rows-\[376px\] {
+    grid-template-rows: 376px;
+  }
+
   .lg\:gap-x-\[30px\] {
     -moz-column-gap: 30px;
          column-gap: 30px;
@@ -1412,7 +1433,7 @@ video {
     width: 100%;
   }
 
-  .lg\:after\:bg-bg-body::after {
+  .lg\:after\:bg-body::after {
     content: var(--tw-content);
     --tw-bg-opacity: 1;
     background-color: hsl(0 0% 8% / var(--tw-bg-opacity));
