@@ -1,290 +1,291 @@
 <!doctype html>
 <html lang="en" class="text-html scroll-smooth">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon" sizes="32x32">
-        <script src="script.js" defer></script>
-        <link rel="stylesheet" href="style.css">
-        <title>Portfolio | Mesbah</title>
-    </head>
-    <body class="bg-body text-primary text-default font-medium leading-[1.56]">
-        <header class="mt-[24px] w-full absolute top-0 left-0 z-10 md:mt-[32px] lg:mt-[48px]">
-            <div class="wrapper flex flex-col md:flex-row gap-y-[20px] justify-between items-center lg-screen:pr-[32px]">
-                <a href="/index.html" class="text-logo leading-none hover:text-contact transition-on-hover focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">
-                    Mesbah
-                    <span class="visually-hidden">(to home page)</span>
-                </a>
-                <div class="flex items-center gap-[25px] md:gap-[32px]">
-                    <a href="https://github.com/Mesbah214" target="_blank" class="focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">
-                        <svg role="img" aria-label="github link" class="text-white hover:fill-current hover:text-contact transition-on-hover svg-size md:svg-size-md" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24">
-                            <path fill="currentColor" fill-rule="evenodd" d="M12.304 0C5.506 0 0 5.506 0 12.304c0 5.444 3.522 10.042 8.413 11.672.615.108.845-.261.845-.584 0-.292-.015-1.261-.015-2.291-3.091.569-3.891-.754-4.137-1.446-.138-.354-.738-1.446-1.261-1.738-.43-.23-1.046-.8-.016-.815.97-.015 1.661.892 1.892 1.261 1.107 1.86 2.876 1.338 3.584 1.015.107-.8.43-1.338.784-1.646-2.738-.307-5.598-1.368-5.598-6.074 0-1.338.477-2.446 1.26-3.307-.122-.308-.553-1.569.124-3.26 0 0 1.03-.323 3.383 1.26.985-.276 2.03-.415 3.076-.415 1.046 0 2.092.139 3.076.416 2.353-1.6 3.384-1.261 3.384-1.261.676 1.691.246 2.952.123 3.26.784.861 1.26 1.953 1.26 3.307 0 4.721-2.875 5.767-5.613 6.074.446.385.83 1.123.83 2.277 0 1.645-.015 2.968-.015 3.383 0 .323.231.708.846.584a12.324 12.324 0 0 0 8.382-11.672C24.607 5.506 19.101 0 12.304 0Z" />
-                        </svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/mesbah214/" target="_blank" class="focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">
-                        <svg role="img" aria-label="linkedin link" class="text-white hover:fill-current hover:text-contact transition-on-hover svg-size md:svg-size-md" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24">
-                            <path fill="currentColor" fill-rule="evenodd" d="M5.551 3.304c-1.14 0-2.067.926-2.067 2.064 0 1.14.928 2.066 2.067 2.066a2.066 2.066 0 0 0 0-4.13ZM3.767 8.998v11.453h3.562L7.33 8.998H3.767Zm5.798 0V20.45l3.554.002.002-5.668c0-1.454.253-2.941 2.132-2.941 1.851 0 1.851 1.755 1.851 3.036v5.571l3.559-.001v-6.28c0-2.834-.517-5.457-4.27-5.457-1.763 0-2.916.997-3.368 1.85h-.05V8.997h-3.41ZM22.435 24H1.982c-.976 0-1.77-.777-1.77-1.732V1.731C.212.776 1.006 0 1.982 0h20.453c.98 0 1.777.776 1.777 1.73v20.538c0 .955-.797 1.732-1.777 1.732Z" />
-                        </svg>
-                    </a>
-                    <a href="https://www.frontendmentor.io/profile/Mesbah214" target="_blank" class="focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">
-                        <svg role="img" aria-label="frontend mentor link" class="text-white hover:fill-current hover:text-contact transition-on-hover svg-size md:svg-size-md" xmlns="http://www.w3.org/2000/svg" width="26" height="23" viewBox="0 0 26 23">
-                            <path fill="currentColor" d="M13.084.23a.751.751 0 0 0-.736.75v14.267a.75.75 0 1 0 1.5 0V.98a.75.75 0 0 0-.763-.75ZM24.44 4.504a.752.752 0 0 0-.284.064l-6.44 2.875a.752.752 0 0 0 0 1.37l6.44 2.884a.75.75 0 0 0 .612-1.369L19.861 8.13l4.907-2.191a.753.753 0 0 0 .38-.99.752.752 0 0 0-.708-.444ZM1.371 9.663a.752.752 0 0 0-.74.938C2.41 17.447 8.603 22.23 15.685 22.23a.75.75 0 1 0 0-1.501A14.053 14.053 0 0 1 2.083 10.225a.75.75 0 0 0-.712-.561v-.001Z" />
-                        </svg>
-                    </a>
-                    <a href="https://www.hackerrank.com/profile/Mesbah214" target="_blank" class="focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">
-                        <svg role="img" aria-label="hackerrank profile link" class="text-white md:w-[32px] md:h-[32px] hover:fill-current hover:text-contact transition-on-hover" width="25" height="25" viewBox="0 0 25 25">
-                            <g id="surface1">
-                                <path fill="currentColor" d="M 19.582031 8.140625 C 19.023438 7.175781 12.15625 3.199219 11.039062 3.199219 C 9.921875 3.199219 3.054688 7.167969 2.496094 8.140625 C 1.941406 9.113281 1.9375 17.046875 2.496094 18.019531 C 3.058594 18.992188 9.921875 22.960938 11.039062 22.960938 C 12.15625 22.960938 19.023438 18.988281 19.582031 18.019531 C 20.140625 17.050781 20.140625 9.101562 19.582031 8.140625 Z M 13.351562 19.1875 C 13.199219 19.1875 11.773438 17.804688 11.886719 17.691406 C 11.921875 17.660156 12.128906 17.636719 12.5625 17.621094 C 12.5625 16.609375 12.585938 14.976562 12.601562 14.289062 C 12.601562 14.214844 12.582031 14.160156 12.582031 14.066406 L 9.5 14.066406 C 9.5 14.339844 9.480469 15.460938 9.550781 16.878906 C 9.558594 17.054688 9.492188 17.109375 9.328125 17.105469 C 8.9375 17.105469 8.546875 17.101562 8.15625 17.105469 C 8 17.105469 7.929688 17.042969 7.933594 16.867188 C 7.96875 15.578125 8.050781 13.625 7.929688 8.660156 L 7.929688 8.539062 C 7.554688 8.523438 7.296875 8.5 7.261719 8.46875 C 7.148438 8.355469 8.597656 6.972656 8.75 6.972656 C 8.902344 6.972656 10.335938 8.355469 10.226562 8.46875 C 10.191406 8.5 9.921875 8.523438 9.578125 8.539062 L 9.578125 8.660156 C 9.484375 9.652344 9.5 11.730469 9.476562 12.726562 L 12.574219 12.726562 C 12.574219 12.550781 12.589844 11.386719 12.527344 9.5 C 12.523438 9.367188 12.5625 9.300781 12.691406 9.300781 C 13.117188 9.296875 13.546875 9.292969 13.972656 9.296875 C 14.105469 9.296875 14.148438 9.363281 14.144531 9.503906 C 14.003906 16.886719 14.121094 16.371094 14.121094 17.621094 C 14.464844 17.636719 14.769531 17.660156 14.804688 17.691406 C 14.914062 17.804688 13.507812 19.1875 13.351562 19.1875 Z M 13.351562 19.1875 " />
-                            </g>
-                        </svg>
-                    </a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon" sizes="32x32">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio | Mesbah</title>
+</head>
+<body class="bg-body text-primary text-default font-medium leading-[1.56]">
+<header class="mt-[24px] w-full absolute top-0 left-0 z-10 md:mt-[32px] lg:mt-[48px]">
+    <div class="wrapper flex flex-col md:flex-row gap-y-[20px] justify-between items-center lg-screen:pr-[32px]">
+        <a href="/index.html" class="text-logo leading-none hover:text-contact transition-on-hover focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">
+            Mesbah
+            <span class="visually-hidden">(to home page)</span>
+        </a>
+        <div class="flex items-center gap-[25px] md:gap-[32px]">
+            <a href="https://github.com/Mesbah214" target="_blank" class="focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">
+                <svg role="img" aria-label="github link" class="text-white hover:fill-current hover:text-contact transition-on-hover svg-size md:svg-size-md" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24">
+                    <path fill="currentColor" fill-rule="evenodd" d="M12.304 0C5.506 0 0 5.506 0 12.304c0 5.444 3.522 10.042 8.413 11.672.615.108.845-.261.845-.584 0-.292-.015-1.261-.015-2.291-3.091.569-3.891-.754-4.137-1.446-.138-.354-.738-1.446-1.261-1.738-.43-.23-1.046-.8-.016-.815.97-.015 1.661.892 1.892 1.261 1.107 1.86 2.876 1.338 3.584 1.015.107-.8.43-1.338.784-1.646-2.738-.307-5.598-1.368-5.598-6.074 0-1.338.477-2.446 1.26-3.307-.122-.308-.553-1.569.124-3.26 0 0 1.03-.323 3.383 1.26.985-.276 2.03-.415 3.076-.415 1.046 0 2.092.139 3.076.416 2.353-1.6 3.384-1.261 3.384-1.261.676 1.691.246 2.952.123 3.26.784.861 1.26 1.953 1.26 3.307 0 4.721-2.875 5.767-5.613 6.074.446.385.83 1.123.83 2.277 0 1.645-.015 2.968-.015 3.383 0 .323.231.708.846.584a12.324 12.324 0 0 0 8.382-11.672C24.607 5.506 19.101 0 12.304 0Z" />
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/mesbah214/" target="_blank" class="focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">
+                <svg role="img" aria-label="linkedin link" class="text-white hover:fill-current hover:text-contact transition-on-hover svg-size md:svg-size-md" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24">
+                    <path fill="currentColor" fill-rule="evenodd" d="M5.551 3.304c-1.14 0-2.067.926-2.067 2.064 0 1.14.928 2.066 2.067 2.066a2.066 2.066 0 0 0 0-4.13ZM3.767 8.998v11.453h3.562L7.33 8.998H3.767Zm5.798 0V20.45l3.554.002.002-5.668c0-1.454.253-2.941 2.132-2.941 1.851 0 1.851 1.755 1.851 3.036v5.571l3.559-.001v-6.28c0-2.834-.517-5.457-4.27-5.457-1.763 0-2.916.997-3.368 1.85h-.05V8.997h-3.41ZM22.435 24H1.982c-.976 0-1.77-.777-1.77-1.732V1.731C.212.776 1.006 0 1.982 0h20.453c.98 0 1.777.776 1.777 1.73v20.538c0 .955-.797 1.732-1.777 1.732Z" />
+                </svg>
+            </a>
+            <a href="https://www.frontendmentor.io/profile/Mesbah214" target="_blank" class="focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">
+                <svg role="img" aria-label="frontend mentor link" class="text-white hover:fill-current hover:text-contact transition-on-hover svg-size md:svg-size-md" xmlns="http://www.w3.org/2000/svg" width="26" height="23" viewBox="0 0 26 23">
+                    <path fill="currentColor" d="M13.084.23a.751.751 0 0 0-.736.75v14.267a.75.75 0 1 0 1.5 0V.98a.75.75 0 0 0-.763-.75ZM24.44 4.504a.752.752 0 0 0-.284.064l-6.44 2.875a.752.752 0 0 0 0 1.37l6.44 2.884a.75.75 0 0 0 .612-1.369L19.861 8.13l4.907-2.191a.753.753 0 0 0 .38-.99.752.752 0 0 0-.708-.444ZM1.371 9.663a.752.752 0 0 0-.74.938C2.41 17.447 8.603 22.23 15.685 22.23a.75.75 0 1 0 0-1.501A14.053 14.053 0 0 1 2.083 10.225a.75.75 0 0 0-.712-.561v-.001Z" />
+                </svg>
+            </a>
+            <a href="https://www.hackerrank.com/profile/Mesbah214" target="_blank" class="focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">
+                <svg role="img" aria-label="hackerrank profile link" class="text-white md:w-[32px] md:h-[32px] hover:fill-current hover:text-contact transition-on-hover" width="25" height="25" viewBox="0 0 25 25">
+                    <g id="surface1">
+                        <path fill="currentColor" d="M 19.582031 8.140625 C 19.023438 7.175781 12.15625 3.199219 11.039062 3.199219 C 9.921875 3.199219 3.054688 7.167969 2.496094 8.140625 C 1.941406 9.113281 1.9375 17.046875 2.496094 18.019531 C 3.058594 18.992188 9.921875 22.960938 11.039062 22.960938 C 12.15625 22.960938 19.023438 18.988281 19.582031 18.019531 C 20.140625 17.050781 20.140625 9.101562 19.582031 8.140625 Z M 13.351562 19.1875 C 13.199219 19.1875 11.773438 17.804688 11.886719 17.691406 C 11.921875 17.660156 12.128906 17.636719 12.5625 17.621094 C 12.5625 16.609375 12.585938 14.976562 12.601562 14.289062 C 12.601562 14.214844 12.582031 14.160156 12.582031 14.066406 L 9.5 14.066406 C 9.5 14.339844 9.480469 15.460938 9.550781 16.878906 C 9.558594 17.054688 9.492188 17.109375 9.328125 17.105469 C 8.9375 17.105469 8.546875 17.101562 8.15625 17.105469 C 8 17.105469 7.929688 17.042969 7.933594 16.867188 C 7.96875 15.578125 8.050781 13.625 7.929688 8.660156 L 7.929688 8.539062 C 7.554688 8.523438 7.296875 8.5 7.261719 8.46875 C 7.148438 8.355469 8.597656 6.972656 8.75 6.972656 C 8.902344 6.972656 10.335938 8.355469 10.226562 8.46875 C 10.191406 8.5 9.921875 8.523438 9.578125 8.539062 L 9.578125 8.660156 C 9.484375 9.652344 9.5 11.730469 9.476562 12.726562 L 12.574219 12.726562 C 12.574219 12.550781 12.589844 11.386719 12.527344 9.5 C 12.523438 9.367188 12.5625 9.300781 12.691406 9.300781 C 13.117188 9.296875 13.546875 9.292969 13.972656 9.296875 C 14.105469 9.296875 14.148438 9.363281 14.144531 9.503906 C 14.003906 16.886719 14.121094 16.371094 14.121094 17.621094 C 14.464844 17.636719 14.769531 17.660156 14.804688 17.691406 C 14.914062 17.804688 13.507812 19.1875 13.351562 19.1875 Z M 13.351562 19.1875 " />
+                    </g>
+                </svg>
+            </a>
+        </div>
+    </div>
+</header>
+
+<main class="overflow-hidden">
+    <!-- HERO -->
+    <section class="relative">
+        <h2 class="visually-hidden">Introduction</h2>
+        <div class="wrapper md:flex lg-screen:relative pb-[80px] md:pb-[100px] lg:pb-[140px]">
+            <img class="absolute top-[112px] right-[50%] -z-10 md:top-[84px] md:-translate-x-[25%] lg:top-[116px] lg:-translate-x-[36%] min-[1250px]:-translate-x-[50%] min-[1250px]:top-[120px]" src="./assets/images/pattern-rings.svg" alt="rings for styling">
+            <div class="relative md:absolute top-0 right-0 md:-z-10">
+                <img class="absolute right-0 bottom-0 translate-x-[65%] md:translate-x-[50%] lg-screen:left-0 lg-screen:-translate-x-1/2 lg-screen:bottom-[50px]" src="./assets/images/pattern-circle.svg" alt="">
+                <picture class="">
+                    <source media="(min-width: 1024px)" srcset="assets/images/portfolio-image-desktop.webp 1x, assets/images/portfolio-image-desktop-2x.webp 2x, assets/images/portfolio-image-desktop-3x.webp 3x" width="445" height="720">
+                    <source media="(min-width: 768px)" srcset="assets/images/portfolio-image-tablet.webp 1x, assets/images/portfolio-image-tablet-2x.webp 2x, assets/images/portfolio-image-tablet-3x.webp 3x" width="323" height="600">
+                    <img class="mx-auto" src="assets/images/portfolio-image-mobile.webp" srcset="assets/images/portfolio-image-mobile-2x.webp 2x, assets/images/portfolio-image-mobile-3x.webp 3x" alt="picture of mesbah" width="174" height="383">
+                </picture>
+            </div>
+            <div class="mt-[40px] md:mt-[138px] lg:mt-[150px] text-center md:text-left">
+                <h1 class="text-hero mb-[24px] md:mb-[60px] lg:mb-[72px]">
+                    Nice to<br>
+                    meet you! I&apos;m<br>
+                    <span class="bg-gradient-to-r from-contact to-contact bg-repeat-x bg-[length:8px_4px] md:bg-[length:8px_6px] bg-[center_top_1.18em]">Mesbah Uddin</span>.
+                </h1>
+                <p class="md:w-[60%] text-secondary mb-[24px] lg:mb-[64px]">Based in the Bangladesh, I'm a front-end developer passionate about building accessible web apps that users love.</p>
+                <a href="./assets/Md_Mesbah_Uddin.pdf" target="_blank" class="text-sub text-decor focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">my resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+        <div class="wrapper relative border-t-[1px] border-b-[1px] custom-small:border-b-0 border-secondary py-[40px] grid gap-[24px] custom-small:grid-cols-2 custom-small:gap-y-[52px] custom-small:gap-x-[24px] md:py-[52px] lg:py-[72px] lg:grid-cols-3 lg:gap-x-[30px] lg:gap-y-[58px]">
+            <img class="absolute bottom-0 right-0 -z-10 translate-y-1/2 translate-x-1/2 custom-small:-translate-y-[10%] custom-small:translate-x-[75%] md:translate-x-[65%] lg:translate-x-[70%]" src="./assets/images/pattern-rings.svg" alt="">
+            <h2 class="visually-hidden">Skills</h2>
+            <div class="skill-container">
+                <h3 class="skill-title">HTML</h3>
+                <p class="text-secondary">4 Years Experience</p>
+            </div>
+            <div class="skill-container">
+                <h3 class="skill-title">CSS</h3>
+                <p class="text-secondary">4 Years Experience</p>
+            </div>
+            <div class="skill-container">
+                <h3 class="skill-title">JavaScript</h3>
+                <p class="text-secondary">4 Years Experience</p>
+            </div>
+            <div class="skill-container">
+                <h3 class="skill-title">TypeScript</h3>
+                <p class="text-secondary">1.5 Years Experience</p>
+            </div>
+            <div class="skill-container">
+                <h3 class="skill-title">Accessibility</h3>
+                <p class="text-secondary">1 Years Experience</p>
+            </div>
+            <div class="skill-container">
+                <h3 class="skill-title">React</h3>
+                <p class="text-secondary">1.5 Years Experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section>
+        <div class="wrapper py-[140px]">
+            <div class="mb-[40px] grid grid-cols-2 items-center md:mb-[60px] lg:mb-[70px]">
+                <h2 class="text-hero">Projects</h2>
+                <a href="#contact" class="text-sub justify-self-end underline decoration-2 underline-offset-[10px] decoration-contact focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">contact me</a>
+            </div>
+
+            <div class="grid grid-cols-1 gap-y-[40px] min-[650px]:grid-cols-2 gap-x-[24px] md:gap-y-[60px] lg:gap-y-[70px] lg:gap-x-[30px]">
+                <div class="group lg:grid grid-cols-1 grid-auto-min">
+                    <picture class="block row-start-1 col-start-1 lg:relative lg:after:absolute lg:after:w-full lg:after:h-full lg:after:top-0 lg:after:bg-body lg:after:opacity-0 lg:group-hover:opacity-30 transition-opacity ease-in-out duration-150 lg:group-focus-within:opacity-30">
+                        <source media="(min-width: 64em)" srcset="./assets/images/marthamax/dribbble_shot_desk_27_4x.webp">
+                        <img src="./assets/images/marthamax/dribbble_shot_desk_27_1x.webp" alt="image of portfolio website" class="w-full" width="343" height="253">
+                    </picture>
+                    <h3 class="projects-name mt-[20px]">marthamax</h3>
+                    <p class="mb-[20px] lg:mb-0">
+                        <span class="tags">gulpjs</span>
+                        <span class="tags">JavaScript</span>
+                        <span class="tags">bootstrap</span>
+                        <span class="tags">html</span>
+                    </p>
+                    <div class="row-start-1 col-start-1 justify-self-center content-center -z-10 group-hover:z-10 lg:group-focus-within:z-10 lg:flex flex-col justify-center items-center gap-[20px]">
+                        <a href="https://marthamax.netlify.app" target="_blank" class="text-sub text-decor mr-[20px] lg:mr-0 focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">View Project</a>
+                        <a href="https://github.com/Mesbah214/marthaMax" target="_blank" class="text-sub text-decor focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">View Code</a>
+                    </div>
+                </div>
+                <div class="group lg:grid grid-cols-1 grid-auto-min">
+                    <picture class="block row-start-1 col-start-1 lg:relative lg:after:absolute lg:after:w-full lg:after:h-full lg:after:top-0 lg:after:bg-body lg:after:opacity-0 lg:group-hover:opacity-30 transition-opacity ease-in-out duration-150 lg:group-focus-within:opacity-30">
+                        <source media="(min-width: 64em)" srcset="./assets/images/room/roomroom4x.webp">
+                        <img src="./assets/images/room/roomroom1x.webp" alt="image of portfolio website" class="w-full" width="343" height="253">
+                    </picture>
+                    <h3 class="projects-name mt-[20px]">room homepage</h3>
+                    <p class="mb-[20px] lg:mb-0">
+                        <span class="tags">gulpjs</span>
+                        <span class="tags">JavaScript</span>
+                        <span class="tags">scss</span>
+                        <span class="tags">html</span>
+                    </p>
+                    <div class="row-start-1 col-start-1 justify-self-center content-center -z-10 group-hover:z-10 lg:group-focus-within:z-10 lg:flex flex-col justify-center items-center gap-[20px]">
+                        <a href="https://room-homepage-ecomm.netlify.app/" target="_blank" class="text-sub text-decor mr-[20px] lg:mr-0 focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">View Project</a>
+                        <a href="https://github.com/Mesbah214/room-homepage" target="_blank" class="text-sub text-decor focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">View Code</a>
+                    </div>
+                </div>
+                <div class="group lg:grid grid-cols-1 grid-auto-min">
+                    <picture class="block row-start-1 col-start-1 lg:relative lg:after:absolute lg:after:w-full lg:after:h-full lg:after:top-0 lg:after:bg-body lg:after:opacity-0 lg:group-hover:opacity-30 transition-opacity ease-in-out duration-150 lg:group-focus-within:opacity-30">
+                        <source media="(min-width: 64em)" srcset="./assets/images/the-shoppies-2021/the-shoppies-2021_1x.webp">
+                        <img src="./assets/images/the-shoppies-2021/the-shoppies-2021_1x.webp" alt="image of portfolio website" class="w-full" width="343" height="253">
+                    </picture>
+                    <h3 class="projects-name mt-[20px]">the shoppies</h3>
+                    <p class="mb-[20px] lg:mb-0">
+                        <span class="tags">react</span>
+                        <span class="tags">TypeScript</span>
+                        <span class="tags">tailwindcss</span>
+                        <span class="tags">omdb api</span>
+                    </p>
+                    <div class="row-start-1 col-start-1 justify-self-center content-center -z-10 group-hover:z-10 lg:group-focus-within:z-10 lg:flex flex-col justify-center items-center gap-[20px]">
+                        <a href="https://shopify-the-shoppies-2021.netlify.app/" target="_blank" class="text-sub text-decor mr-[20px] lg:mr-0 focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">View Project</a>
+                        <a href="https://github.com/Mesbah214/The-Shoppies-2021" target="_blank" class="text-sub text-decor focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">View Code</a>
+                    </div>
+                </div>
+                <div class="group lg:grid grid-cols-1 grid-auto-min">
+                    <picture class="block row-start-1 col-start-1 lg:relative lg:after:absolute lg:after:w-full lg:after:h-full lg:after:top-0 lg:after:bg-body lg:after:opacity-0 lg:group-hover:opacity-30 transition-opacity ease-in-out duration-150 lg:group-focus-within:opacity-30">
+                        <source media="(min-width: 64em)" srcset="./assets/images/food-app/food-app_4x.webp">
+                        <img src="./assets/images/food-app/food-app_1x.webp" alt="image of portfolio website" class="w-full" width="343" height="253">
+                    </picture>
+                    <h3 class="projects-name mt-[20px]">food app</h3>
+                    <p class="mb-[20px] lg:mb-0">
+                        <span class="tags">react</span>
+                        <span class="tags">css</span>
+                    </p>
+                    <div class="row-start-1 col-start-1 justify-self-center content-center -z-10 group-hover:z-10 lg:group-focus-within:z-10 lg:flex flex-col justify-center items-center gap-[20px]">
+                        <a href="https://food-order214.netlify.app/" target="_blank" class="text-sub text-decor mr-[20px] lg:mr-0 focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">View Project</a>
+                        <a href="https://github.com/Mesbah214/Food-Order" target="_blank" class="text-sub text-decor focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">View Code</a>
+                    </div>
+                </div>
+                <div class="group lg:grid grid-cols-1 grid-auto-min">
+                    <picture class="block row-start-1 col-start-1 lg:relative lg:after:absolute lg:after:w-full lg:after:h-full lg:after:top-0 lg:after:bg-body lg:after:opacity-0 lg:group-hover:opacity-30 transition-opacity ease-in-out duration-150 lg:group-focus-within:opacity-30">
+                        <source media="(min-width: 64em)" srcset="./assets/images/testimonial/testimonial_4x.webp">
+                        <img src="./assets/images/testimonial/testimonial_1x.webp" alt="image of portfolio website" class="w-full" width="343" height="253">
+                    </picture>
+                    <h3 class="projects-name mt-[20px]">coding bootcamp testimonial</h3>
+                    <p class="mb-[20px] lg:mb-0">
+                        <span class="tags">JavaScript</span>
+                        <span class="tags">tailwindcss</span>
+                        <span class="tags">html</span>
+                    </p>
+                    <div class="row-start-1 col-start-1 justify-self-center content-center -z-10 group-hover:z-10 lg:group-focus-within:z-10 lg:flex flex-col justify-center items-center gap-[20px]">
+                        <a href="https://coding-bootcamp-testimonial-slider-bay.vercel.app/" target="_blank" class="text-sub text-decor mr-[20px] lg:mr-0 focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">View Project</a>
+                        <a href="https://github.com/Mesbah214/Coding-Bootcamp-Testimonial-Slider" target="_blank" class="text-sub text-decor focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">View Code</a>
+                    </div>
+                </div>
+                <div class="group lg:grid grid-cols-1 grid-auto-min">
+                    <picture class="block row-start-1 col-start-1 lg:relative lg:after:absolute lg:after:w-full lg:after:h-full lg:after:top-0 lg:after:bg-body lg:after:opacity-0 lg:group-hover:opacity-30 transition-opacity ease-in-out duration-150 lg:group-focus-within:opacity-30">
+                        <source media="(min-width: 64em)" srcset="./assets/images/faq-accordion/faq-accordion_4x.webp">
+                        <img src="./assets/images/faq-accordion/faq-accordion_1x.webp" alt="image of portfolio website" class="w-full" width="343" height="253">
+                    </picture>
+                    <h3 class="projects-name mt-[20px]">faq accordion card</h3>
+                    <p class="mb-[20px] lg:mb-0">
+                        <span class="tags">JavaScript</span>
+                        <span class="tags">tailwindcss</span>
+                        <span class="tags">html</span>
+                    </p>
+                    <div class="justify-self-center row-start-1 col-start-1 content-center -z-10 group-hover:z-10 lg:group-focus-within:z-10 lg:flex flex-col justify-center items-center gap-[20px]">
+                        <a href="https://faq-accordion-card-three-ivory.vercel.app/" target="_blank" class="text-sub text-decor mr-[20px] lg:mr-0 focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">View Project</a>
+                        <a href="https://github.com/Mesbah214/faq-accordion-card" target="_blank" class="text-sub text-decor focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">View Code</a>
+                    </div>
                 </div>
             </div>
-        </header>
+        </div>
+    </section>
 
-        <main class="overflow-hidden">
-            <!-- HERO -->
-            <section class="relative">
-                <div class="wrapper md:flex lg-screen:relative pb-[80px] md:pb-[100px] lg:pb-[140px]">
-                    <img class="absolute top-[112px] right-[50%] -z-10 md:top-[84px] md:-translate-x-[25%] lg:top-[116px] lg:-translate-x-[36%] min-[1250px]:-translate-x-[50%] min-[1250px]:top-[120px]" src="./assets/images/pattern-rings.svg" alt="rings for styling">
-                    <div class="relative md:absolute top-0 right-0 md:-z-10">
-                        <img class="absolute right-0 bottom-0 translate-x-[65%] md:translate-x-[50%] lg-screen:left-0 lg-screen:-translate-x-1/2 lg-screen:bottom-[50px]" src="./assets/images/pattern-circle.svg" alt="">
-                        <picture class="">
-                            <source media="(min-width: 1024px)" srcset="assets/images/portfolio-image-desktop.webp 1x, assets/images/portfolio-image-desktop-2x.webp 2x, assets/images/portfolio-image-desktop-3x.webp 3x" width="445" height="720">
-                            <source media="(min-width: 768px)" srcset="assets/images/portfolio-image-tablet.webp 1x, assets/images/portfolio-image-tablet-2x.webp 2x, assets/images/portfolio-image-tablet-3x.webp 3x" width="323" height="600">
-                            <img class="mx-auto" src="assets/images/portfolio-image-mobile.webp" srcset="assets/images/portfolio-image-mobile-2x.webp 2x, assets/images/portfolio-image-mobile-3x.webp 3x" alt="picture of mesbah" width="174" height="383">
-                        </picture>
-                    </div>
-                    <div class="mt-[40px] md:mt-[138px] lg:mt-[150px] text-center md:text-left">
-                        <h1 class="text-hero mb-[24px] md:mb-[60px] lg:mb-[72px]">
-                            Nice to<br>
-                            meet you! I&apos;m<br>
-                            <span class="bg-gradient-to-r from-contact to-contact bg-repeat-x bg-[length:8px_4px] md:bg-[length:8px_6px] bg-[center_top_1.18em]">Mesbah Uddin</span>.
-                        </h1>
-                        <p class="md:w-[60%] text-secondary mb-[24px] lg:mb-[64px]">Based in the Bangladesh, I'm a front-end developer passionate about building accessible web apps that users love.</p>
-                        <a href="./assets/Md_Mesbah_Uddin.pdf" target="_blank" class="text-sub text-decor focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">my resume</a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- SKILLS -->
-            <section>
-                <div class="wrapper relative border-t-[1px] border-b-[1px] custom-small:border-b-0 border-secondary py-[40px] grid gap-[24px] custom-small:grid-cols-2 custom-small:gap-y-[52px] custom-small:gap-x-[24px] md:py-[52px] lg:py-[72px] lg:grid-cols-3 lg:gap-x-[30px] lg:gap-y-[58px]">
-                    <img class="absolute bottom-0 right-0 -z-10 translate-y-1/2 translate-x-1/2 custom-small:-translate-y-[10%] custom-small:translate-x-[75%] md:translate-x-[65%] lg:translate-x-[70%]" src="./assets/images/pattern-rings.svg" alt="">
-                    <h2 class="visually-hidden">Skills</h2>
-                    <div class="skill-container">
-                        <h3 class="skill-title">HTML</h3>
-                        <p class="text-secondary">4 Years Experience</p>
-                    </div>
-                    <div class="skill-container">
-                        <h3 class="skill-title">CSS</h3>
-                        <p class="text-secondary">4 Years Experience</p>
-                    </div>
-                    <div class="skill-container">
-                        <h3 class="skill-title">JavaScript</h3>
-                        <p class="text-secondary">4 Years Experience</p>
-                    </div>
-                    <div class="skill-container">
-                        <h3 class="skill-title">TypeScript</h3>
-                        <p class="text-secondary">1.5 Years Experience</p>
-                    </div>
-                    <div class="skill-container">
-                        <h3 class="skill-title">Accessibility</h3>
-                        <p class="text-secondary">1 Years Experience</p>
-                    </div>
-                    <div class="skill-container">
-                        <h3 class="skill-title">React</h3>
-                        <p class="text-secondary">1.5 Years Experience</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- PROJECTS -->
-            <section>
-                <div class="wrapper py-[140px]">
-                    <div class="mb-[40px] grid grid-cols-2 items-center md:mb-[60px] lg:mb-[70px]">
-                        <h2 class="text-hero">Projects</h2>
-                        <a href="#contact" class="text-sub justify-self-end underline decoration-2 underline-offset-[10px] decoration-contact focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">contact me</a>
-                    </div>
-
-                    <div class="grid grid-cols-1 gap-y-[40px] min-[650px]:grid-cols-2 gap-x-[24px] md:gap-y-[60px] lg:gap-y-[70px] lg:gap-x-[30px]">
-                        <div class="group lg:grid grid-cols-1 grid-auto-min">
-                            <picture class="block row-start-1 col-start-1 lg:relative lg:after:absolute lg:after:w-full lg:after:h-full lg:after:top-0 lg:after:bg-body lg:after:opacity-0 lg:group-hover:opacity-30 transition-opacity ease-in-out duration-150 lg:group-focus-within:opacity-30">
-                                <source media="(min-width: 64em)" srcset="./assets/images/marthamax/dribbble_shot_desk_27_4x.webp">
-                                <img src="./assets/images/marthamax/dribbble_shot_desk_27_1x.webp" alt="image of portfolio website" class="w-full" width="343" height="253">
-                            </picture>
-                            <h3 class="projects-name mt-[20px]">marthamax</h3>
-                            <p class="mb-[20px] lg:mb-0">
-                                <span class="tags">gulpjs</span>
-                                <span class="tags">JavaScript</span>
-                                <span class="tags">bootstrap</span>
-                                <span class="tags">html</span>
-                            </p>
-                            <div class="row-start-1 col-start-1 justify-self-center content-center -z-10 group-hover:z-10 lg:group-focus-within:z-10 lg:flex flex-col justify-center items-center gap-[20px]">
-                                <a href="https://marthamax.netlify.app" target="_blank" class="text-sub text-decor mr-[20px] lg:mr-0 focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">View Project</a>
-                                <a href="https://github.com/Mesbah214/marthaMax" target="_blank" class="text-sub text-decor focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">View Code</a>
-                            </div>
-                        </div>
-                        <div class="group lg:grid grid-cols-1 grid-auto-min">
-                            <picture class="block row-start-1 col-start-1 lg:relative lg:after:absolute lg:after:w-full lg:after:h-full lg:after:top-0 lg:after:bg-body lg:after:opacity-0 lg:group-hover:opacity-30 transition-opacity ease-in-out duration-150 lg:group-focus-within:opacity-30">
-                                <source media="(min-width: 64em)" srcset="./assets/images/room/roomroom4x.webp">
-                                <img src="./assets/images/room/roomroom1x.webp" alt="image of portfolio website" class="w-full" width="343" height="253">
-                            </picture>
-                            <h3 class="projects-name mt-[20px]">room homepage</h3>
-                            <p class="mb-[20px] lg:mb-0">
-                                <span class="tags">gulpjs</span>
-                                <span class="tags">JavaScript</span>
-                                <span class="tags">scss</span>
-                                <span class="tags">html</span>
-                            </p>
-                            <div class="row-start-1 col-start-1 justify-self-center content-center -z-10 group-hover:z-10 lg:group-focus-within:z-10 lg:flex flex-col justify-center items-center gap-[20px]">
-                                <a href="https://room-homepage-ecomm.netlify.app/" target="_blank" class="text-sub text-decor mr-[20px] lg:mr-0 focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">View Project</a>
-                                <a href="https://github.com/Mesbah214/room-homepage" target="_blank" class="text-sub text-decor focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">View Code</a>
-                            </div>
-                        </div>
-                        <div class="group lg:grid grid-cols-1 grid-auto-min">
-                            <picture class="block row-start-1 col-start-1 lg:relative lg:after:absolute lg:after:w-full lg:after:h-full lg:after:top-0 lg:after:bg-body lg:after:opacity-0 lg:group-hover:opacity-30 transition-opacity ease-in-out duration-150 lg:group-focus-within:opacity-30">
-                                <source media="(min-width: 64em)" srcset="./assets/images/the-shoppies-2021/the-shoppies-2021_1x.webp">
-                                <img src="./assets/images/the-shoppies-2021/the-shoppies-2021_1x.webp" alt="image of portfolio website" class="w-full" width="343" height="253">
-                            </picture>
-                            <h3 class="projects-name mt-[20px]">the shoppies</h3>
-                            <p class="mb-[20px] lg:mb-0">
-                                <span class="tags">react</span>
-                                <span class="tags">TypeScript</span>
-                                <span class="tags">tailwindcss</span>
-                                <span class="tags">omdb api</span>
-                            </p>
-                            <div class="row-start-1 col-start-1 justify-self-center content-center -z-10 group-hover:z-10 lg:group-focus-within:z-10 lg:flex flex-col justify-center items-center gap-[20px]">
-                                <a href="https://shopify-the-shoppies-2021.netlify.app/" target="_blank" class="text-sub text-decor mr-[20px] lg:mr-0 focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">View Project</a>
-                                <a href="https://github.com/Mesbah214/The-Shoppies-2021" target="_blank" class="text-sub text-decor focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">View Code</a>
-                            </div>
-                        </div>
-                        <div class="group lg:grid grid-cols-1 grid-auto-min">
-                            <picture class="block row-start-1 col-start-1 lg:relative lg:after:absolute lg:after:w-full lg:after:h-full lg:after:top-0 lg:after:bg-body lg:after:opacity-0 lg:group-hover:opacity-30 transition-opacity ease-in-out duration-150 lg:group-focus-within:opacity-30">
-                                <source media="(min-width: 64em)" srcset="./assets/images/food-app/food-app_4x.webp">
-                                <img src="./assets/images/food-app/food-app_1x.webp" alt="image of portfolio website" class="w-full" width="343" height="253">
-                            </picture>
-                            <h3 class="projects-name mt-[20px]">food app</h3>
-                            <p class="mb-[20px] lg:mb-0">
-                                <span class="tags">react</span>
-                                <span class="tags">css</span>
-                            </p>
-                            <div class="row-start-1 col-start-1 justify-self-center content-center -z-10 group-hover:z-10 lg:group-focus-within:z-10 lg:flex flex-col justify-center items-center gap-[20px]">
-                                <a href="https://food-order214.netlify.app/" target="_blank" class="text-sub text-decor mr-[20px] lg:mr-0 focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">View Project</a>
-                                <a href="https://github.com/Mesbah214/Food-Order" target="_blank" class="text-sub text-decor focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">View Code</a>
-                            </div>
-                        </div>
-                        <div class="group lg:grid grid-cols-1 grid-auto-min">
-                            <picture class="block row-start-1 col-start-1 lg:relative lg:after:absolute lg:after:w-full lg:after:h-full lg:after:top-0 lg:after:bg-body lg:after:opacity-0 lg:group-hover:opacity-30 transition-opacity ease-in-out duration-150 lg:group-focus-within:opacity-30">
-                                <source media="(min-width: 64em)" srcset="./assets/images/testimonial/testimonial_4x.webp">
-                                <img src="./assets/images/testimonial/testimonial_1x.webp" alt="image of portfolio website" class="w-full" width="343" height="253">
-                            </picture>
-                            <h3 class="projects-name mt-[20px]">coding bootcamp testimonial</h3>
-                            <p class="mb-[20px] lg:mb-0">
-                                <span class="tags">JavaScript</span>
-                                <span class="tags">tailwindcss</span>
-                                <span class="tags">html</span>
-                            </p>
-                            <div class="row-start-1 col-start-1 justify-self-center content-center -z-10 group-hover:z-10 lg:group-focus-within:z-10 lg:flex flex-col justify-center items-center gap-[20px]">
-                                <a href="https://coding-bootcamp-testimonial-slider-bay.vercel.app/" target="_blank" class="text-sub text-decor mr-[20px] lg:mr-0 focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">View Project</a>
-                                <a href="https://github.com/Mesbah214/Coding-Bootcamp-Testimonial-Slider" target="_blank" class="text-sub text-decor focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">View Code</a>
-                            </div>
-                        </div>
-                        <div class="group lg:grid grid-cols-1 grid-auto-min">
-                            <picture class="block row-start-1 col-start-1 lg:relative lg:after:absolute lg:after:w-full lg:after:h-full lg:after:top-0 lg:after:bg-body lg:after:opacity-0 lg:group-hover:opacity-30 transition-opacity ease-in-out duration-150 lg:group-focus-within:opacity-30">
-                                <source media="(min-width: 64em)" srcset="./assets/images/pig-game/pig-game_4x.webp">
-                                <img src="./assets/images/pig-game/pig-game_1x.webp" alt="image of portfolio website" class="w-full" width="343" height="253">
-                            </picture>
-                            <h3 class="projects-name mt-[20px]">pig game</h3>
-                            <p class="mb-[20px] lg:mb-0">
-                                <span class="tags">JavaScript</span>
-                                <span class="tags">css</span>
-                                <span class="tags">html</span>
-                            </p>
-                            <div class="justify-self-center row-start-1 col-start-1 content-center -z-10 group-hover:z-10 lg:group-focus-within:z-10 lg:flex flex-col justify-center items-center gap-[20px]">
-                                <a href="https://pig-game214.netlify.app/" target="_blank" class="text-sub text-decor mr-[20px] lg:mr-0 focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">View Project</a>
-                                <a href="https://github.com/Mesbah214/Pig-Game" target="_blank" class="text-sub text-decor focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">View Code</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- CONTACT -->
-            <section class="bg-accent" id="contact">
-                <div class="relative mx-auto w-[90%] max-w-[44.5rem] lg:max-w-[1124px] py-[84px] grid grid-rows-[auto_356px] lg:grid-rows-[376px] lg:grid-cols-[repeat(2,_41.28rem)] justify-between">
-                    <div class="mb-[16px]">
-                        <h2 class="text-hero mb-[20px] text-center lg:text-left">Contact</h2>
-                        <p class="text-secondary text-center lg:text-left">I would love to hear about your project and how I could help. Please fill in the form, and I'll get back to you as soon as possible.</p>
-                    </div>
-                    <form id="custom-form" onsubmit="return submitForm()">
-                        <div class="form_control relative mb-[16px]">
-                            <label for="name" class="visually-hidden">Name</label>
-                            <input class="placeholder:uppercase focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px] focus:invalid:outline-invalid w-full bg-transparent py-[16px] px-[24px] border-b-[1px] border-white leading-[1.625] text-secondary" type="text" autocomplete="off" id="name" name="name" placeholder="Name" required>
-                            <img class="form_icon w-[2.4rem] h-[2.4rem] absolute right-0 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden" src="./assets/images/icon-invalid.svg" alt="" width="24" height="24">
-                        </div>
-                        <div class="form_control relative mb-[16px]">
-                            <label for="email" class="visually-hidden">Email</label>
-                            <input class="placeholder:uppercase focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px] focus:invalid:outline-invalid w-full bg-transparent py-[16px] px-[24px] border-b-[1px] border-white leading-[1.625] text-secondary" type="email" autocomplete="off" id="email" name="email" placeholder="Email" required>
-                            <img class="form_icon w-[2.4rem] h-[2.4rem] absolute right-0 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden" src="./assets/images/icon-invalid.svg" alt="" width="24" height="24">
-                        </div>
-                        <div class="form_control relative mb-[16px] z-10">
-                            <label for="message" class="visually-hidden">Message</label>
-                            <textarea class="placeholder:uppercase mb-[32px] focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px] focus:invalid:outline-invalid w-full bg-transparent py-[16px] px-[24px] border-b-[1px] border-white leading-[1.625] text-secondary" id="message" name="message" cols="30" rows="3" placeholder="Message" required></textarea>
-                            <img class="form_icon w-[2.4rem] h-[2.4rem] absolute top-0 right-0 -translate-x-1/2 translate-y-[80%] hidden" src="./assets/images/icon-invalid.svg" alt="" width="24" height="24">
-                        </div>
-                        <!-- To disable forsubmit.co features -->
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="false">
-                        <div class="mb-[16px]">
-                            <button type="submit" class="text-sub text-decor block ml-auto focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">send message</button>
-                        </div>
-                    </form>
-                    <div class="text-center mt-[32px] hidden" id="success">
-                        <h3 class="text-sub text-decor mb-[24px]">message sent</h3>
-                        <p class="text-secondary">Thank you for reaching out and expressing interest in my services. I will come back to you as soon as possible.</p>
-                    </div>
-                    <img src="./assets/images/pattern-rings.svg" class="absolute bottom-[26%] md:bottom-0 left-0 -translate-x-1/2 md:-translate-x-full lg:-translate-x-[70%] translate-y-1/2 md:-translate-y-1/2" alt="">
-                </div>
-            </section>
-        </main>
-
-        <!-- FOOTER -->
-        <footer class="bg-accent">
-            <div class="wrapper border-t-[1px] pt-[40px] pb-[60px] md:pt-[30px] md:pb-[40px] lg:pt-[47px] lg:pb-[92px] flex flex-col md:flex-row gap-y-[20px] justify-between items-center">
-                <a href="./index.html" class="text-logo leading-none hover:text-contact transition-on-hover focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">
-                    Mesbah
-                    <span class="visually-hidden">(to home page)</span>
-                </a>
-                <div class="flex items-center gap-[25px] md:gap-[32px]">
-                    <a href="https://github.com/Mesbah214" target="_blank" class="focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">
-                        <svg role="img" aria-label="github link" class="text-white hover:fill-current hover:text-contact transition-on-hover svg-size md:svg-size-md" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24">
-                            <path fill="currentColor" fill-rule="evenodd" d="M12.304 0C5.506 0 0 5.506 0 12.304c0 5.444 3.522 10.042 8.413 11.672.615.108.845-.261.845-.584 0-.292-.015-1.261-.015-2.291-3.091.569-3.891-.754-4.137-1.446-.138-.354-.738-1.446-1.261-1.738-.43-.23-1.046-.8-.016-.815.97-.015 1.661.892 1.892 1.261 1.107 1.86 2.876 1.338 3.584 1.015.107-.8.43-1.338.784-1.646-2.738-.307-5.598-1.368-5.598-6.074 0-1.338.477-2.446 1.26-3.307-.122-.308-.553-1.569.124-3.26 0 0 1.03-.323 3.383 1.26.985-.276 2.03-.415 3.076-.415 1.046 0 2.092.139 3.076.416 2.353-1.6 3.384-1.261 3.384-1.261.676 1.691.246 2.952.123 3.26.784.861 1.26 1.953 1.26 3.307 0 4.721-2.875 5.767-5.613 6.074.446.385.83 1.123.83 2.277 0 1.645-.015 2.968-.015 3.383 0 .323.231.708.846.584a12.324 12.324 0 0 0 8.382-11.672C24.607 5.506 19.101 0 12.304 0Z" />
-                        </svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/mesbah214/" target="_blank" class="focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">
-                        <svg role="img" aria-label="linkedin link" class="text-white hover:fill-current hover:text-contact transition-on-hover svg-size md:svg-size-md" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24">
-                            <path fill="currentColor" fill-rule="evenodd" d="M5.551 3.304c-1.14 0-2.067.926-2.067 2.064 0 1.14.928 2.066 2.067 2.066a2.066 2.066 0 0 0 0-4.13ZM3.767 8.998v11.453h3.562L7.33 8.998H3.767Zm5.798 0V20.45l3.554.002.002-5.668c0-1.454.253-2.941 2.132-2.941 1.851 0 1.851 1.755 1.851 3.036v5.571l3.559-.001v-6.28c0-2.834-.517-5.457-4.27-5.457-1.763 0-2.916.997-3.368 1.85h-.05V8.997h-3.41ZM22.435 24H1.982c-.976 0-1.77-.777-1.77-1.732V1.731C.212.776 1.006 0 1.982 0h20.453c.98 0 1.777.776 1.777 1.73v20.538c0 .955-.797 1.732-1.777 1.732Z" />
-                        </svg>
-                    </a>
-                    <a href="https://www.frontendmentor.io/profile/Mesbah214" target="_blank" class="focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">
-                        <svg role="img" aria-label="frontend mentor link" class="text-white hover:fill-current hover:text-contact transition-on-hover svg-size md:svg-size-md" xmlns="http://www.w3.org/2000/svg" width="26" height="23" viewBox="0 0 26 23">
-                            <path fill="currentColor" d="M13.084.23a.751.751 0 0 0-.736.75v14.267a.75.75 0 1 0 1.5 0V.98a.75.75 0 0 0-.763-.75ZM24.44 4.504a.752.752 0 0 0-.284.064l-6.44 2.875a.752.752 0 0 0 0 1.37l6.44 2.884a.75.75 0 0 0 .612-1.369L19.861 8.13l4.907-2.191a.753.753 0 0 0 .38-.99.752.752 0 0 0-.708-.444ZM1.371 9.663a.752.752 0 0 0-.74.938C2.41 17.447 8.603 22.23 15.685 22.23a.75.75 0 1 0 0-1.501A14.053 14.053 0 0 1 2.083 10.225a.75.75 0 0 0-.712-.561v-.001Z" />
-                        </svg>
-                    </a>
-                    <a href="https://www.hackerrank.com/profile/Mesbah214" target="_blank" class="focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">
-                        <svg role="img" aria-label="hackerrank profile link" class="text-white md:w-[32px] md:h-[32px] hover:fill-current hover:text-contact transition-on-hover" width="25" height="25" viewBox="0 0 25 25">
-                            <g id="surface2">
-                                <path fill="currentColor" d="M 19.582031 8.140625 C 19.023438 7.175781 12.15625 3.199219 11.039062 3.199219 C 9.921875 3.199219 3.054688 7.167969 2.496094 8.140625 C 1.941406 9.113281 1.9375 17.046875 2.496094 18.019531 C 3.058594 18.992188 9.921875 22.960938 11.039062 22.960938 C 12.15625 22.960938 19.023438 18.988281 19.582031 18.019531 C 20.140625 17.050781 20.140625 9.101562 19.582031 8.140625 Z M 13.351562 19.1875 C 13.199219 19.1875 11.773438 17.804688 11.886719 17.691406 C 11.921875 17.660156 12.128906 17.636719 12.5625 17.621094 C 12.5625 16.609375 12.585938 14.976562 12.601562 14.289062 C 12.601562 14.214844 12.582031 14.160156 12.582031 14.066406 L 9.5 14.066406 C 9.5 14.339844 9.480469 15.460938 9.550781 16.878906 C 9.558594 17.054688 9.492188 17.109375 9.328125 17.105469 C 8.9375 17.105469 8.546875 17.101562 8.15625 17.105469 C 8 17.105469 7.929688 17.042969 7.933594 16.867188 C 7.96875 15.578125 8.050781 13.625 7.929688 8.660156 L 7.929688 8.539062 C 7.554688 8.523438 7.296875 8.5 7.261719 8.46875 C 7.148438 8.355469 8.597656 6.972656 8.75 6.972656 C 8.902344 6.972656 10.335938 8.355469 10.226562 8.46875 C 10.191406 8.5 9.921875 8.523438 9.578125 8.539062 L 9.578125 8.660156 C 9.484375 9.652344 9.5 11.730469 9.476562 12.726562 L 12.574219 12.726562 C 12.574219 12.550781 12.589844 11.386719 12.527344 9.5 C 12.523438 9.367188 12.5625 9.300781 12.691406 9.300781 C 13.117188 9.296875 13.546875 9.292969 13.972656 9.296875 C 14.105469 9.296875 14.148438 9.363281 14.144531 9.503906 C 14.003906 16.886719 14.121094 16.371094 14.121094 17.621094 C 14.464844 17.636719 14.769531 17.660156 14.804688 17.691406 C 14.914062 17.804688 13.507812 19.1875 13.351562 19.1875 Z M 13.351562 19.1875 " />
-                            </g>
-                        </svg>
-                    </a>
-                </div>
+    <!-- CONTACT -->
+    <section class="bg-accent" id="contact">
+        <div class="relative mx-auto w-[90%] max-w-[44.5rem] lg:max-w-[1124px] py-[84px] grid grid-rows-[auto_356px] lg:grid-rows-[376px] lg:grid-cols-[repeat(2,_41.28rem)] justify-between">
+            <div class="mb-[16px]">
+                <h2 class="text-hero mb-[20px] text-center lg:text-left">Contact</h2>
+                <p class="text-secondary text-center lg:text-left">I would love to hear about your project and how I could help. Please fill in the form, and I'll get back to you as soon as possible.</p>
             </div>
-        </footer>
-    </body>
+            <form id="custom-form" onsubmit="return submitForm()">
+                <div class="form_control relative mb-[16px]">
+                    <label for="name" class="visually-hidden">Name</label>
+                    <input class="placeholder:uppercase focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px] focus:invalid:outline-invalid w-full bg-transparent py-[16px] px-[24px] border-b-[1px] border-white leading-[1.625] text-secondary" type="text" autocomplete="off" id="name" name="name" placeholder="Name" required>
+                    <img class="form_icon w-[2.4rem] h-[2.4rem] absolute right-0 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden" src="./assets/images/icon-invalid.svg" alt="" width="24" height="24">
+                </div>
+                <div class="form_control relative mb-[16px]">
+                    <label for="email" class="visually-hidden">Email</label>
+                    <input class="placeholder:uppercase focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px] focus:invalid:outline-invalid w-full bg-transparent py-[16px] px-[24px] border-b-[1px] border-white leading-[1.625] text-secondary" type="email" autocomplete="off" id="email" name="email" placeholder="Email" required>
+                    <img class="form_icon w-[2.4rem] h-[2.4rem] absolute right-0 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden" src="./assets/images/icon-invalid.svg" alt="" width="24" height="24">
+                </div>
+                <div class="form_control relative mb-[16px] z-10">
+                    <label for="message" class="visually-hidden">Message</label>
+                    <textarea class="placeholder:uppercase mb-[32px] focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px] focus:invalid:outline-invalid w-full bg-transparent py-[16px] px-[24px] border-b-[1px] border-white leading-[1.625] text-secondary" id="message" name="message" cols="30" rows="3" placeholder="Message" required></textarea>
+                    <img class="form_icon w-[2.4rem] h-[2.4rem] absolute top-0 right-0 -translate-x-1/2 translate-y-[80%] hidden" src="./assets/images/icon-invalid.svg" alt="" width="24" height="24">
+                </div>
+                <!-- To disable forsubmit.co features -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="false">
+                <div class="mb-[16px]">
+                    <button type="submit" class="text-sub text-decor block ml-auto focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">send message</button>
+                </div>
+            </form>
+            <div class="text-center mt-[32px] hidden" id="success">
+                <h3 class="text-sub text-decor mb-[24px]">message sent</h3>
+                <p class="text-secondary">Thank you for reaching out and expressing interest in my services. I will come back to you as soon as possible.</p>
+            </div>
+            <img src="./assets/images/pattern-rings.svg" class="absolute bottom-[26%] md:bottom-0 left-0 -translate-x-1/2 md:-translate-x-full lg:-translate-x-[70%] translate-y-1/2 md:-translate-y-1/2" alt="">
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-accent">
+    <div class="wrapper border-t-[1px] pt-[40px] pb-[60px] md:pt-[30px] md:pb-[40px] lg:pt-[47px] lg:pb-[92px] flex flex-col md:flex-row gap-y-[20px] justify-between items-center">
+        <a href="./index.html" class="text-logo leading-none hover:text-contact transition-on-hover focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">
+            Mesbah
+            <span class="visually-hidden">(to home page)</span>
+        </a>
+        <div class="flex items-center gap-[25px] md:gap-[32px]">
+            <a href="https://github.com/Mesbah214" target="_blank" class="focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">
+                <svg role="img" aria-label="github link" class="text-white hover:fill-current hover:text-contact transition-on-hover svg-size md:svg-size-md" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24">
+                    <path fill="currentColor" fill-rule="evenodd" d="M12.304 0C5.506 0 0 5.506 0 12.304c0 5.444 3.522 10.042 8.413 11.672.615.108.845-.261.845-.584 0-.292-.015-1.261-.015-2.291-3.091.569-3.891-.754-4.137-1.446-.138-.354-.738-1.446-1.261-1.738-.43-.23-1.046-.8-.016-.815.97-.015 1.661.892 1.892 1.261 1.107 1.86 2.876 1.338 3.584 1.015.107-.8.43-1.338.784-1.646-2.738-.307-5.598-1.368-5.598-6.074 0-1.338.477-2.446 1.26-3.307-.122-.308-.553-1.569.124-3.26 0 0 1.03-.323 3.383 1.26.985-.276 2.03-.415 3.076-.415 1.046 0 2.092.139 3.076.416 2.353-1.6 3.384-1.261 3.384-1.261.676 1.691.246 2.952.123 3.26.784.861 1.26 1.953 1.26 3.307 0 4.721-2.875 5.767-5.613 6.074.446.385.83 1.123.83 2.277 0 1.645-.015 2.968-.015 3.383 0 .323.231.708.846.584a12.324 12.324 0 0 0 8.382-11.672C24.607 5.506 19.101 0 12.304 0Z" />
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/mesbah214/" target="_blank" class="focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">
+                <svg role="img" aria-label="linkedin link" class="text-white hover:fill-current hover:text-contact transition-on-hover svg-size md:svg-size-md" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24">
+                    <path fill="currentColor" fill-rule="evenodd" d="M5.551 3.304c-1.14 0-2.067.926-2.067 2.064 0 1.14.928 2.066 2.067 2.066a2.066 2.066 0 0 0 0-4.13ZM3.767 8.998v11.453h3.562L7.33 8.998H3.767Zm5.798 0V20.45l3.554.002.002-5.668c0-1.454.253-2.941 2.132-2.941 1.851 0 1.851 1.755 1.851 3.036v5.571l3.559-.001v-6.28c0-2.834-.517-5.457-4.27-5.457-1.763 0-2.916.997-3.368 1.85h-.05V8.997h-3.41ZM22.435 24H1.982c-.976 0-1.77-.777-1.77-1.732V1.731C.212.776 1.006 0 1.982 0h20.453c.98 0 1.777.776 1.777 1.73v20.538c0 .955-.797 1.732-1.777 1.732Z" />
+                </svg>
+            </a>
+            <a href="https://www.frontendmentor.io/profile/Mesbah214" target="_blank" class="focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">
+                <svg role="img" aria-label="frontend mentor link" class="text-white hover:fill-current hover:text-contact transition-on-hover svg-size md:svg-size-md" xmlns="http://www.w3.org/2000/svg" width="26" height="23" viewBox="0 0 26 23">
+                    <path fill="currentColor" d="M13.084.23a.751.751 0 0 0-.736.75v14.267a.75.75 0 1 0 1.5 0V.98a.75.75 0 0 0-.763-.75ZM24.44 4.504a.752.752 0 0 0-.284.064l-6.44 2.875a.752.752 0 0 0 0 1.37l6.44 2.884a.75.75 0 0 0 .612-1.369L19.861 8.13l4.907-2.191a.753.753 0 0 0 .38-.99.752.752 0 0 0-.708-.444ZM1.371 9.663a.752.752 0 0 0-.74.938C2.41 17.447 8.603 22.23 15.685 22.23a.75.75 0 1 0 0-1.501A14.053 14.053 0 0 1 2.083 10.225a.75.75 0 0 0-.712-.561v-.001Z" />
+                </svg>
+            </a>
+            <a href="https://www.hackerrank.com/profile/Mesbah214" target="_blank" class="focus-visible:outline outline-4 outline-contact outline-offset-4 rounded-[1px]">
+                <svg role="img" aria-label="hackerrank profile link" class="text-white md:w-[32px] md:h-[32px] hover:fill-current hover:text-contact transition-on-hover" width="25" height="25" viewBox="0 0 25 25">
+                    <g id="surface2">
+                        <path fill="currentColor" d="M 19.582031 8.140625 C 19.023438 7.175781 12.15625 3.199219 11.039062 3.199219 C 9.921875 3.199219 3.054688 7.167969 2.496094 8.140625 C 1.941406 9.113281 1.9375 17.046875 2.496094 18.019531 C 3.058594 18.992188 9.921875 22.960938 11.039062 22.960938 C 12.15625 22.960938 19.023438 18.988281 19.582031 18.019531 C 20.140625 17.050781 20.140625 9.101562 19.582031 8.140625 Z M 13.351562 19.1875 C 13.199219 19.1875 11.773438 17.804688 11.886719 17.691406 C 11.921875 17.660156 12.128906 17.636719 12.5625 17.621094 C 12.5625 16.609375 12.585938 14.976562 12.601562 14.289062 C 12.601562 14.214844 12.582031 14.160156 12.582031 14.066406 L 9.5 14.066406 C 9.5 14.339844 9.480469 15.460938 9.550781 16.878906 C 9.558594 17.054688 9.492188 17.109375 9.328125 17.105469 C 8.9375 17.105469 8.546875 17.101562 8.15625 17.105469 C 8 17.105469 7.929688 17.042969 7.933594 16.867188 C 7.96875 15.578125 8.050781 13.625 7.929688 8.660156 L 7.929688 8.539062 C 7.554688 8.523438 7.296875 8.5 7.261719 8.46875 C 7.148438 8.355469 8.597656 6.972656 8.75 6.972656 C 8.902344 6.972656 10.335938 8.355469 10.226562 8.46875 C 10.191406 8.5 9.921875 8.523438 9.578125 8.539062 L 9.578125 8.660156 C 9.484375 9.652344 9.5 11.730469 9.476562 12.726562 L 12.574219 12.726562 C 12.574219 12.550781 12.589844 11.386719 12.527344 9.5 C 12.523438 9.367188 12.5625 9.300781 12.691406 9.300781 C 13.117188 9.296875 13.546875 9.292969 13.972656 9.296875 C 14.105469 9.296875 14.148438 9.363281 14.144531 9.503906 C 14.003906 16.886719 14.121094 16.371094 14.121094 17.621094 C 14.464844 17.636719 14.769531 17.660156 14.804688 17.691406 C 14.914062 17.804688 13.507812 19.1875 13.351562 19.1875 Z M 13.351562 19.1875 " />
+                    </g>
+                </svg>
+            </a>
+        </div>
+    </div>
+</footer>
+</body>
 </html>
